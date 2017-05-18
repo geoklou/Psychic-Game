@@ -1,0 +1,83 @@
+/*HW3 - Psychic Game - GCLOU*/
+
+/*css for Psychic Game*/
+
+body {
+  margin:10px 50px 20px 50px;
+  padding: 20px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height:140%;
+  font-color:#777777;
+  background-color: #FDFDFD;
+  border:2px #666666 inset;
+}
+
+.box{
+	margin:5px; 
+	padding:10px; 
+	border:2px red solid; 
+	width:50%; 
+	position: relative; 
+	height:200px;
+}
+      
+.btn{
+  padding:5px 10px 5px 10px;
+  color:white;
+  background-color:#990000;
+  font-weight:bold;
+  font-size: 90%;
+  margin:20px 0px 20px 5px;
+}
+
+h1{
+	text-align: center;
+	font-size:36px;
+	font-weight: bold;
+	margin:0 auto;
+	width:100%;
+}
+
+h2{
+	font-size: 24px;
+	color: blue;
+	line-height: 200%;
+}
+
+h3{
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom:1px black solid;
+}
+
+.game_panel{
+	margin:50px;
+	padding: 20px;
+	font-color:red;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.script{
+	font-size:18px;
+	color: #cc0000;
+	line-height: 140%;
+}
+
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    color:#333333;
+    border-width: 2px;
+}
+
+.small-print{
+	text-align: center;
+	font-size:0.8em;
+	color:#666666;
+}

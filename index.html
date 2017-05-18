@@ -1,0 +1,62 @@
+<!-- HW3 - Psychic Game - GCLOU -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Psychic Game</title>
+</head>
+
+<body>
+
+<h1>The Psychic Game</h1>
+  <h2>Guess what letter I am thinking of?</h2>
+  <p>Enter a letter: (9 guesses per round)</p>
+<hr>
+    <div id="game" class="game_panel">
+    </div>
+
+<script type="text/javascript">
+
+      // event function for user to enter by pressing a key
+      document.onkeyup = function(event) {
+
+        // Determine which key was pressed
+        userGuess = event.key;
+        //minus one guess token
+        tokens--;
+        //add the guess to the array
+        guessList.push(userGuess);
+        //convert letter to lowercase for comparison with computer choice
+        guessConverted = userGuess.toLowerCase();
+        // computer randomly chooses a letter from the options array.
+        computerGuess = options[Math.floor(Math.random() * options.length)];
+        //display both inputs for verification
+        document.querySelector("#small-print").innerHTML = "--> For testing only (removable): You chose: " + userGuess + ".   The computer chose: " + computerGuess;
+        //invoke function to compare inputs using window object
+        window.match();
+      };// main event ends
+
+</script>
+
+<!--display score in HTML-->
+<div id="display" class="box"> 
+<h3>Scores:</h3>
+</div>
+<!--verify matching letter-->
+<div id="small-print" class="small-print"> 
+<p>Verify:</p>
+</div>
+
+<!--reload page for convenience-->
+<input type="button" value="Refresh Page" onClick="window.location.reload()" class="btn">
+  
+</body>
+
+<!--call js-->
+<script src="assets/javascript/game.js"></script>
+
+</html>
